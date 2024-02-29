@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Technical Documentation Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python3 Loops Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#What_is_a_Loop?">What is a Loop?</a></li>
+        <li><a class="nav-link" href="#For_Loops">For Loops</a></li>
+        <li><a class="nav-link" href="#While_Loops">While Loops</a></li>
+        <li><a class="nav-link" href="#Nested_Loops">Nested Loops</a></li>
+        <li><a class="nav-link" href="#Loop_Modifiers">Loop Modifiers</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>This website's purpose is to give you a quick lesson on Loops in Python3 and some of their functionalities!</p>
+      </section>
+      <section class="main-section" id="What_is_a_Loop?">
+        <header>What is a Loop?</header>
+        <p>Loops are fundamental constructs in programming languages that allow you to execute a block of code repeatedly. In Python, loops provide a powerful mechanism for iterating over sequences, performing repetitive tasks, and controlling the flow of your program. Here are some professional examples of Loops that you may see later down the line!</p>
+        <ul>
+          <li>Processing Lists or Arrays</li>
+          <li>Iterating<sup>1</sup> Through Files</li>
+          <li>Automating Repetitive Tasks</li>
+        <p id="note">Iterating<sup>1</sup>: to perform repeatedly.</p>
+        </ul>
+      </section>
+      <section class="main-section" id="For_Loops">
+        <header>For Loops</header>
+          <p>A for loop statement that allows you to execute a block of code repeatedly, typically for a specified number of times or over a sequence of elements. It consists of three main components: initialization, condition, and iteration. 
+          </p>
+          <p>During initialization, you define a loop variable and set its initial value. The loop continues as long as the condition evaluates to true. The condition is typically a comparison involving the loop variable.
+
+With each iteration of the loop, the loop variable is updated according to the iteration expression. This expression can increment or decrement the loop variable, effectively controlling the loop's progress.
+          </p>
+          <code>
+            for i in range(5)
+            <br>
+            &nbsp;&nbsp;&nbsp;print(i)
+          </code>
+          <p>In this code, condition is "for each number in range(5)", so our loop will go around 5 times!</p>
+      </section>
+      <section class="main-section" id="While_Loops">
+        <header>While Loops</header>
+        <p>A while loop statement allows you to execute a block of code repeatedly as long as a specified condition is true. It consists of a condition that is evaluated before each iteration, and if the condition evaluates to true, the code block is executed. The loop continues until the condition becomes false.</p>
+<code>
+while condition:
+<br>
+&nbsp;&nbsp;&nbsp;# code block to be executed
+</code>
+<p>In this code, the loop will continue as long as the condition remains true. Once the condition becomes false, the loop will terminate.</p>
+      </section>
+      <section class="main-section" id="Nested_Loops">
+        <header>Nested Loops</header>
+        <p>Nested loops are loops inside other loops. They are commonly used when you need to perform repeated actions within the context of another repeated action. For example, iterating over each item in a list and then performing another iteration within that loop.</p>
+<code>
+for i in range(3):
+<br>
+&nbsp;&nbsp;&nbsp;for j in range(2):
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# code block to be executed
+</code>
+<p>In this code, the outer loop iterates 3 times, and for each iteration of the outer loop, the inner loop iterates 2 times. This results in a total of 6 iterations of the inner loop.</p>
+      </section>
+      <section class="main-section" id="Loop_Modifiers">
+        <header>Loop Modifiers</header>
+          <p>Loop modifiers are special keywords or statements that allow you to control the flow of a loop and modify its behavior. They can be used to skip iterations, exit the loop prematurely, or perform specific actions based on certain conditions.</p>
+<code>
+# Example of loop modifiers<br>
+for i in range(5):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if i == 3:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue  # Skip the current iteration<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if i == 4:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break  # Exit the loop<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print(i)<br>
+</code>
+<p>In this example:</p>
+<ul>
+  <li>The <code>continue</code> statement skips the current iteration of the loop when <code>i</code> equals 3.</li>
+  <li>The <code>break</code> statement exits the loop prematurely when <code>i</code> equals 4.</li>
+</ul>
+      </section>
+    </main>
+  </body>
+</html>
